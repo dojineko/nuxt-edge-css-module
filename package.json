@@ -4,6 +4,6 @@
     "dev": "nuxt"
   },
   "dependencies": {
-    "nuxt-edge": "^2.0.0-25371809.c4ff714"
+    "nuxt-edge": "^2.0.0-25372531.0dd35fb"
   }
 }

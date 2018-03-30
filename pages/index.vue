@@ -1,11 +1,29 @@
 <template>
-  <div :class="$style.text" style="font-size:32pt; color:red;">
-    EXPECT BLUE
+  <div>
+    <div class="base" :class="$style.styledByCssModules">
+      EXPECT BLUE (styled by CSS Modules)
+    </div>
+    <div class="base styledByScopedCSS">
+      EXPECT BLUE (styled by Scoped CSS)
+    </div>
   </div>
 </template>
 
+<style>
+.base {
+  color: red;
+  font-size:32pt;
+}
+</style>
+
 <style module>
-.text {
-  color: blue !important;
+.styledByCssModules {
+  color: blue;
+}
+</style>
+
+<style scoped>
+.styledByScopedCSS {
+  color: blue;
 }
 </style>
